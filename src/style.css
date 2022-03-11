@@ -84,10 +84,15 @@ input {
     padding: 1em;
     width: 60%;
     margin-bottom: 0.6em;
+    background-color: #E6EBF2;
+    border: none;
 }
 
 input:focus {
-    background: #CDDCDD;
+    background: #C6CDD6;
+    outline: none !important;
+    border:1px solid #C6CDD6;
+    box-shadow: 0 0 10px #719ECE;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -100,6 +105,10 @@ input[type=button] {
     width: 70%;
 }
 
+input:disabled {
+    background: #ccc;
+}
+
 @media screen and (max-width: 500px) {
     .container {
         font-size: 14px;
@@ -110,4 +119,48 @@ input[type=button] {
     .tabsContent {
         padding: 1em 1.2em;
     }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.switch input {
+    display: none
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 50px;
+    width: 50px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+input:checked+.slider {
+    background-color: #2C3E50;
+}
+
+input:checked+.slider:before {
+    transform: translateX(50px);
 }

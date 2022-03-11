@@ -56,6 +56,46 @@ function lagrangeSegundoOrden() {
     parseFloat(document.getElementById('resultado4').value = result);
 }
 
+function switchLineal() {
+    let FX = document.getElementById('switchLineal');
+    let fxLineal = document.getElementById('fxLineal');
+    fxLineal.disabled = true;
+
+    if (FX.checked == true) {
+        fxLineal.disabled = false;
+    }
+}
+
+function switchCuadratica() {
+    let FX = document.getElementById('switchCuadratica');
+    let fxLineal = document.getElementById('fxCuad');
+    fxLineal.disabled = true;
+
+    if (FX.checked == true) {
+        fxLineal.disabled = false;
+    }
+}
+
+function switchLag1() {
+    let FX = document.getElementById('switchLag1');
+    let fxLineal = document.getElementById('fxLag1');
+    fxLineal.disabled = true;
+
+    if (FX.checked == true) {
+        fxLineal.disabled = false;
+    }
+}
+
+function switchLag2() {
+    let FX = document.getElementById('switchLag2');
+    let fxLineal = document.getElementById('fxLag2');
+    fxLineal.disabled = true;
+
+    if (FX.checked == true) {
+        fxLineal.disabled = false;
+    }
+}
+
 function refresh() {
     location.reload(true);
 }
