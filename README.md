@@ -4,4 +4,4 @@
 
 **https://luispinto90.github.io/ProgramaInterpolaciones/**
 
-![Imagen](img/001.png)
+![Imagen](img/002.png)
