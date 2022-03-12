@@ -8,6 +8,7 @@ function lineal() {
     let result = (FX0 + (FX1 - FX0) / (X1 - X0)) * (X - X0);
 
     parseFloat(document.getElementById('resultado').value = result);
+    return result;
 }
 
 function cuadratica() {
@@ -25,6 +26,7 @@ function cuadratica() {
     let result = (b0 + (b1 * (X - X0)) + (b2 * (X - X0) * (X - X1)));
 
     parseFloat(document.getElementById('resultado2').value = result);
+    return result;
 }
 
 function lagrangePrimerOrden() {
@@ -37,6 +39,7 @@ function lagrangePrimerOrden() {
     let result = (((X - X1) / (X0 - X1)) * FX0) + (((X - X0) / (X1 - X0)) * FX1);
 
     parseFloat(document.getElementById('resultado3').value = result);
+    return result;
 }
 
 function lagrangeSegundoOrden() {
@@ -54,6 +57,39 @@ function lagrangeSegundoOrden() {
     let result = segmentoA + segmentoB + segmentoC;
 
     parseFloat(document.getElementById('resultado4').value = result);
+    return result;
+}
+
+function errorPorcentualLineal() {
+    let valorReal = parseFloat(document.getElementById('fxLineal').value);
+    let errorVerdadero = valorReal - lineal();
+    let errorPorcentual = ((errorVerdadero / valorReal) * 100);
+
+    parseInt(document.getElementById('errorPorcLin').value = errorPorcentual);
+}
+
+function errorPorcentualCuadratica() {
+    let valorReal = parseFloat(document.getElementById('fxCuad').value);
+    let errorVerdadero = valorReal - cuadratica();
+    let errorPorcentual = ((errorVerdadero / valorReal) * 100);
+
+    parseInt(document.getElementById('errorPorcCuad').value = errorPorcentual);
+}
+
+function errorPorcentualLag1() {
+    let valorReal = parseFloat(document.getElementById('fxLag1').value);
+    let errorVerdadero = valorReal - lagrangePrimerOrden();
+    let errorPorcentual = ((errorVerdadero / valorReal) * 100);
+
+    parseInt(document.getElementById('errorPorcLag1').value = errorPorcentual);
+}
+
+function errorPorcentualLag2() {
+    let valorReal = parseFloat(document.getElementById('fxLag2').value);
+    let errorVerdadero = valorReal - lagrangeSegundoOrden();
+    let errorPorcentual = ((errorVerdadero / valorReal) * 100);
+
+    parseInt(document.getElementById('errorPorcLag2').value = errorPorcentual);
 }
 
 function switchLineal() {

@@ -39,10 +39,15 @@
                     <input type="number" placeholder=" Escribe x⁰" id="x0">
                     <input type="number" placeholder=" Escribe x¹" id="x1">
                     <input type="number" placeholder=" Escribe x" id="x">
-                    <input type="button" name="Calcular" value="Calcular" onclick="lineal();">
+                    <input type="button" name="Calcular" value="Calcular" onclick="lineal(); errorPorcentualLineal();">
                     <input type="button" name="Limpiar" value="Limpiar valores" onclick="refresh();">
-                    <input type="number" placeholder="RESULTADO" id="resultado" readonly><br>
-                    Luis Roberto Pinto Guti&eacute;rrez - 20181101<br> Ingenier&iacute;a de Software (2022)
+                </p>
+                <p>
+                    <p>Resultado:</p>
+                    <p><input type="number" placeholder="RESULTADO" id="resultado" readonly></p>
+                    <p>Error relativo porcentual:</p>
+                    <p><input type="number" placeholder="ERROR %" id="errorPorcLin" readonly><br></p>
+                    <p>Luis Roberto Pinto Guti&eacute;rrez - 20181101<br> Ingenier&iacute;a de Software (2022)</p>
                 </p>
             </div>
             <!-- 2 | INTERPOLACION CUADRATICA -->
@@ -63,10 +68,16 @@
                         <input type="number" placeholder=" Escribe x¹" id="x01">
                         <input type="number" placeholder=" Escribe x²" id="x02">
                         <input type="number" placeholder=" Escribe x" id="0x">
-                        <input type="button" name="Calcular" value="Calcular" onclick="cuadratica();">
+                        <input type="button" name="Calcular" value="Calcular"
+                            onclick="cuadratica(); errorPorcentualCuadratica();">
                         <input type="button" name="Limpiar" value="Limpiar valores" onclick="refresh();">
-                        <input type="number" placeholder="RESULTADO" id="resultado2" readonly><br>
-                        Luis Roberto Pinto Guti&eacute;rrez - 20181101<br> Ingenier&iacute;a de Software (2022)
+                    </p>
+                    <p>
+                        <p>Resultado:</p>
+                        <p><input type="number" placeholder="RESULTADO" id="resultado2" readonly></p>
+                        <p>Error relativo porcentual:</p>
+                        <p><input type="number" placeholder="ERROR %" id="errorPorcCuad" readonly><br></p>
+                        <p>Luis Roberto Pinto Guti&eacute;rrez - 20181101<br> Ingenier&iacute;a de Software (2022)</p>
                     </p>
                 </p>
             </div>
@@ -86,10 +97,16 @@
                         <input type="number" placeholder=" Escribe x⁰" id="x000">
                         <input type="number" placeholder=" Escribe x¹" id="x001">
                         <input type="number" placeholder=" Escribe x" id="00x">
-                        <input type="button" name="Calcular" value="Calcular" onclick="lagrangePrimerOrden();">
+                        <input type="button" name="Calcular" value="Calcular"
+                            onclick="lagrangePrimerOrden(); errorPorcentualLag1();">
                         <input type="button" name="Limpiar" value="Limpiar valores" onclick="refresh();">
-                        <input type="number" placeholder="RESULTADO" id="resultado3" readonly><br>
-                        Luis Roberto Pinto Guti&eacute;rrez - 20181101<br> Ingenier&iacute;a de Software (2022)
+                    </p>
+                    <p>
+                        <p>Resultado:</p>
+                        <p><input type="number" placeholder="RESULTADO" id="resultado3" readonly></p>
+                        <p>Error relativo porcentual:</p>
+                        <p><input type="number" placeholder="ERROR %" id="errorPorcLag1" readonly><br></p>
+                        <p>Luis Roberto Pinto Guti&eacute;rrez - 20181101<br> Ingenier&iacute;a de Software (2022)</p>
                     </p>
                 </p>
             </div>
@@ -111,10 +128,16 @@
                         <input type="number" placeholder=" Escribe x¹" id="x0001">
                         <input type="number" placeholder=" Escribe x²" id="x0002">
                         <input type="number" placeholder=" Escribe x" id="000x">
-                        <input type="button" name="Calcular" value="Calcular" onclick="lagrangeSegundoOrden();">
+                        <input type="button" name="Calcular" value="Calcular"
+                            onclick="lagrangeSegundoOrden(); errorPorcentualLag2();">
                         <input type="button" name="Limpiar" value="Limpiar valores" onclick="refresh();">
-                        <input type="number" placeholder="RESULTADO" id="resultado4" readonly><br>
-                        Luis Roberto Pinto Guti&eacute;rrez - 20181101<br> Ingenier&iacute;a de Software (2022)
+                    </p>
+                    <p>
+                        <p>Resultado:</p>
+                        <p><input type="number" placeholder="RESULTADO" id="resultado4" readonly></p>
+                        <p>Error relativo porcentual:</p>
+                        <p><input type="number" placeholder="ERROR %" id="errorPorcLag2" readonly><br></p>
+                        <p>Luis Roberto Pinto Guti&eacute;rrez - 20181101<br> Ingenier&iacute;a de Software (2022)</p>
                     </p>
                 </p>
             </div>
